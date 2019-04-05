@@ -35,8 +35,9 @@
             <TextView
                 android:id="@+id/textViewCompte"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="30dp"
                 android:baselineAligned="false"
                 android:gravity="center"
                 android:text="Nom de compte"
@@ -46,7 +47,7 @@
             <EditText
                 android:id="@+id/idLogin"
                 android:layout_width="wrap_content"
-                android:layout_height="46dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:baselineAligned="false"
                 android:ems="10"
@@ -57,8 +58,8 @@
 
             <TextView
                 android:id="@+id/textViewMDP"
-                android:layout_width="129dp"
-                android:layout_height="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:baselineAligned="false"
                 android:gravity="center"
@@ -68,8 +69,8 @@
 
             <EditText
                 android:id="@+id/idPassword"
-                android:layout_width="189dp"
-                android:layout_height="46dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:baselineAligned="false"
                 android:ems="10"
@@ -77,6 +78,15 @@
                 android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="110dp"
                 tools:layout_editor_absoluteY="302dp" />
+
+            <Button
+                android:id="@+id/validerConnexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Connexion" />
         </LinearLayout>
 
     </LinearLayout>

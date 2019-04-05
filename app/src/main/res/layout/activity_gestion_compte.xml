@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -25,28 +24,28 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textViewInscri"
+                    android:id="@+id/textViewGestion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="0dp"
                     android:gravity="center"
-                    android:text="Inscription"
-                    android:textSize="60sp"
+                    android:text="Gestion Compte"
+                    android:textSize="50sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/imageHome"
+                    app:srcCompat="@drawable/logo_maison"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="30dp"
-                    app:srcCompat="@drawable/logo_maison" />
+                    android:layout_marginLeft="0dp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/Compte"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_weight="0"
@@ -57,6 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
                     android:gravity="center"
                     android:text="Compte"
                     android:textSize="24sp"
@@ -65,108 +65,48 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Mail" />
 
-                        <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Mail" />
-
-                        <EditText
-                            android:id="@+id/saisieMailInscription"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:ems="10"
-                            android:gravity="center"
-                            android:inputType="textPersonName" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <EditText
+                        android:id="@+id/saisieMailInscription"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Mot de passe" />
-
-                        <EditText
-                            android:id="@+id/saisiePasswordInscription"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:ems="10"
-                            android:gravity="center"
-                            android:inputType="textPersonName" />
-                    </LinearLayout>
-
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/textView3"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Mot de passe" />
 
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Revenu Net Imposable" />
-
-                        <EditText
-                            android:id="@+id/saisieRevenuNet"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:inputType="textPersonName" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <EditText
+                        android:id="@+id/saisiePasswordInscription"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Nombre d'enfant" />
-
-                        <EditText
-                            android:id="@+id/saisieNbEnfant"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:inputType="textPersonName" />
-                    </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -370,9 +310,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_weight="0"
-                android:text="Valider" />
+                android:text="Modifier" />
 
         </LinearLayout>
     </ScrollView>
-
 </android.support.constraint.ConstraintLayout>
