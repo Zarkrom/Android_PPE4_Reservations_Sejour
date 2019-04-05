@@ -19,8 +19,8 @@
 
             <LinearLayout
                 android:id="@+id/libellePageAccueil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="0"
                 android:orientation="horizontal">
 
@@ -39,6 +39,7 @@
                     android:id="@+id/imageHome"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_gravity="right"
                     android:layout_marginLeft="30dp"
                     app:srcCompat="@drawable/logo_maison" />
 
@@ -112,61 +113,9 @@
                             android:layout_gravity="center"
                             android:ems="10"
                             android:gravity="center"
-                            android:inputType="textPersonName" />
+                            android:inputType="textPassword" />
                     </LinearLayout>
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Revenu Net Imposable" />
-
-                        <EditText
-                            android:id="@+id/saisieRevenuNet"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:inputType="textPersonName" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="Nombre d'enfant" />
-
-                        <EditText
-                            android:id="@+id/saisieNbEnfant"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:inputType="textPersonName" />
-                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
@@ -353,16 +302,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-            <Button
-                android:id="@+id/AjoutEnfant"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Ajouter un enfant" />
 
             <Button
                 android:id="@+id/validerInscription"

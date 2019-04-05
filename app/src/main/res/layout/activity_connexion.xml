@@ -75,7 +75,7 @@
                 android:baselineAligned="false"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 tools:layout_editor_absoluteX="110dp"
                 tools:layout_editor_absoluteY="302dp" />
 

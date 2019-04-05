@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -35,11 +36,11 @@
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:id="@+id/imageHome"
-                    app:srcCompat="@drawable/logo_maison"
+                    android:id="@+id/imagehome"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="0dp" />
+                    android:layout_marginLeft="0dp"
+                    app:srcCompat="@drawable/logo_maison" />
 
             </LinearLayout>
 
@@ -106,7 +107,7 @@
                         android:layout_gravity="center"
                         android:ems="10"
                         android:gravity="center"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPassword" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -295,14 +296,14 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/AjoutEnfant"
+                android:id="@+id/ListeEnfant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Ajouter un enfant" />
+                android:text="Voir la liste des enfants" />
 
             <Button
                 android:id="@+id/validerInscription"
